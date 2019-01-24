@@ -1,0 +1,73 @@
+.audiojs{
+	height: 120px;
+	width: 100%;
+	background-image: none;
+	background-color: transparent;
+	.box-shadow(none);
+	position: relative;
+	font-family: "Verdana";
+	p{
+		width: 100px;
+		height: 100px;
+	}
+	.play-pause{
+		width: 100px;
+		height: 100px;
+		padding: 0;
+		border: none;
+		margin-right: 54px;
+	}
+	.play{
+		background-image: url(../images/play.svg);
+	}
+	.pause{
+		background-image: url(../images/pause.svg);
+		background-position: 0 0;
+	}
+	.loaded{
+		background-image: url(../images/player.png);
+		background-repeat-y: no-repeat;
+		top: 2px;
+		background-color: transparent; 
+		height: 8px;
+	}
+	.time{
+		border: none;
+		height: 30px;
+		line-height: 21px;
+		margin: 0;
+		padding: 0;
+		.text-shadow(none);
+		color: @white;
+		position: absolute;
+		bottom: 0;
+		left: 154px;
+	}
+	.scrubber{
+		height: 8px;
+		background: transparent;
+		border: none;
+		margin: 77px 0 0 0px;
+		width: 84%;
+	}
+	.progress{
+		background-color: @yellow;
+		height: 8px;
+		border-radius: 8px;
+		background-image: none;
+	}
+}
+
+.wrap-audio{
+	position: relative;
+	padding: 30px 0 0;
+	h6{
+		display: block;
+		margin-bottom: 0;
+	}
+}
+.audio-content{
+	position: absolute;
+	left: 154px;
+	margin-top: -30px;
+}
