@@ -67,11 +67,61 @@ img{
 }
 .accordeon{
 	font-size: 12px;
-	padding: 0 62px;
+	padding: 0 62px 28px;
+	position: relative;
+	border-radius: 0 15px 15px 15px;
+	&:nth-child(2n){
+		background-color: rgba(45, 190, 205, 0.05);
+	}
 	&.opened{
 		background-color: @blue;
-		border-radius: 0 20px 20px 20px;
+		
 		color: @white;
+	}
+	&.closed{
+
+	}
+}
+.accordeon-block{
+	max-width: 780px;
+	padding-top: 60px;
+	padding-bottom: 52px;
+}
+.accordeon-btn{
+	position: absolute;
+	top: 32px;
+	right: 64px;
+	width: 18px;
+	height: 18px;
+	background-image: url(../images/close.svg);
+	cursor: pointer;
+}
+.accordeon-button{
+	position: absolute;
+	top: 34px;
+	right: 12px;
+	width: 22px;
+	height: 22px;
+	background-image: url(../images/open.svg);
+	cursor: pointer;
+}
+.audio-icon{
+	width: 100px;
+	height: 100px;
+	background-image: url(../images/play.svg);
+	float: left;
+	margin-top: 26px;
+}
+.audio-text{
+	margin-left: 154px;
+	h6{
+		display: block;
+		margin-bottom: 0;
+		color: @violet;
+	}
+	h3{
+		font-weight: 700;
+		margin-bottom: 18px;
 	}
 }
 .user{
@@ -82,15 +132,55 @@ img{
 	float: left;
 }
 .user-text{
-	margin-left: 124px;
+	margin-left: 120px;
 	a{
 		font-weight: 700;
 		color: @yellow;
 		text-decoration: none;
+		margin-left: 3px;
 		&:hover{
 			text-decoration: underline;
 		}
 	}
+	h4{
+		font-weight: 700;
+		color: @turquoise;
+		margin-bottom: 19px;
+	}
+
+}
+.links{
+	text-align: right;
+	padding: 30px 46px 10px 0;
+	ul{
+		list-style: none;
+		display: inline-block;
+	}
+	font-weight: 700;
+	font-size: 14px;
+	li{
+		float: left;
+		margin-left: 19px;
+	}
+	a{
+		color: @white;
+		text-decoration: none;
+		.transition(0.2s);
+		svg{
+			fill: @white;
+			width: 27px;
+			height: 27px;
+			margin-right: 2px;
+		}
+		&:hover, &.active{
+			color: @turquoise;
+			svg{
+				fill: @turquoise;
+			}
+		}
+	}
+
+
 }
 @media (max-width: 767px) {
 	.main-section-content {

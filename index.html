@@ -43,11 +43,11 @@
 			</section>
 			<section class="wrap-accordeon">
 				<div class="main-width">
-					<div class="accordeon">
-						<div class="open"></div>
-						<audio src="http://kolber.github.io/audiojs/demos/mp3/juicy.mp3" preload="auto"></audio>
-						<div>
-							<h6>Folge 1</h6>
+					<div class="accordeon accordeon-block">
+						<div class="accordeon-button open"></div>
+						<div class="audio-icon"></div>
+						<div class="audio-text">
+							<h6>FOLGE 1</h6>
 							<h3>Title of the first podcast</h3>
 							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 							tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
@@ -56,13 +56,21 @@
 						</div>
 					</div>
 					<div class="accordeon opened">
-						<div class="close"></div>
+						<div class="accordeon-btn close"></div>
 						<div>
-							<ul>
-								<li><a href=""><img src="">Transcription</a></li>
-								<li><a href=""><img src="">Download</a></li>
-								<li><a href=""><img src="">Share</a></li>
-							</ul>
+							<div class="links">
+								<ul class="clearfix">
+									<li><a href="">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.69 25.69"><g id="Слой_2" data-name="Слой 2"><g id="_MAIN" data-name="• MAIN"><g id="bubble"><rect class="cls-1" x="10.22" y="11.2" width="3" height="1"/><rect class="cls-1" x="10.22" y="13.2" width="6" height="1"/><rect class="cls-1" x="10.22" y="15.2" width="6" height="1"/><path class="cls-1" d="M12.84,0A12.85,12.85,0,1,0,25.69,12.84,12.84,12.84,0,0,0,12.84,0Zm5.38,20.2h-10V7.2h7v3h3Z"/></g></g></g></svg>
+										Transcription</a></li>
+									<li><a href="">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.69 25.69"><g id="Слой_2" data-name="Слой 2"><g id="_MAIN" data-name="• MAIN"><g id="bubble"><path class="cls-1" d="M12.84,0A12.85,12.85,0,1,0,25.69,12.84,12.84,12.84,0,0,0,12.84,0ZM8,10.42a1.39,1.39,0,0,1,1.83.17L12,13V5.2h2v7.91L16,10.59a1.33,1.33,0,0,1,1.78-.17A1.18,1.18,0,0,1,18,12.09l-4.07,5a1.18,1.18,0,0,1-.93.44h-.1a1.2,1.2,0,0,1-.93-.44l-4-5A1.19,1.19,0,0,1,8,10.42ZM18.77,20.2H7.51c-.65,0-1.18-.34-1.18-1s.53-1,1.18-1H18.77c.66,0,1.19.35,1.19,1S19.43,20.2,18.77,20.2Z"/></g></g></g></svg>
+									Download</a></li>
+									<li><a href="">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.33 25.33"><g id="Слой_2" data-name="Слой 2"><g id="_MAIN" data-name="• MAIN"><g id="bubble"><path class="cls-1" d="M0,12.67a12.18,12.18,0,0,0,3.7,9,12.23,12.23,0,0,0,9,3.71,12.22,12.22,0,0,0,9-3.71,12.19,12.19,0,0,0,3.71-9,12.25,12.25,0,0,0-3.71-9,12.21,12.21,0,0,0-9-3.7A12.22,12.22,0,0,0,3.7,3.7a12.25,12.25,0,0,0-3.7,9M5.8,9H9.23v9.63H5.8Zm4.43,9V9.73l3.39-5A.55.55,0,0,1,14,4.46a.54.54,0,0,1,.3.06,2.05,2.05,0,0,1,.57.5,1.72,1.72,0,0,1,.31.6,2,2,0,0,1-.27,1.74L13.61,9.73h5.32a1.27,1.27,0,0,1,.94.4,1.38,1.38,0,0,1-.74,2.34l-.89,0a1.36,1.36,0,0,1,.94.39,1.4,1.4,0,0,1,0,2,1.38,1.38,0,0,1-.76.38l-1.17,0a1.28,1.28,0,0,1,.75.39,1.34,1.34,0,0,1,.41,1,1.37,1.37,0,0,1-.41,1,1.46,1.46,0,0,1-.75.38Z"/></g></g></g></svg>
+									Share</a></li>
+								</ul>
+							</div>
 							<div class="wrap-audio">
 								<div class="audio-content">
 									<h6>FOLGE 2</h6>
@@ -88,7 +96,7 @@
 									<img src="images/user-2.jpg" alt="">
 								</div>
 								<div class="user-text">
-									<h4>Inés Dawson</h4>
+									<h4>Kai Beckmann</h4>
 									<p>Lorem ipsum dolor sit amet,
 									consetetur sadipscing elitr,
 									sed diam nonumy...<a href="">More</a></p>
@@ -99,7 +107,7 @@
 									<img src="images/user-3.jpg" alt="">
 								</div>
 								<div class="user-text">
-									<h4>Inés Dawson</h4>
+									<h4>Andreas Steinle</h4>
 									<p>Lorem ipsum dolor sit amet,
 									consetetur sadipscing elitr,
 									sed diam nonumy...<a href="">More</a></p>
@@ -128,6 +136,30 @@
 							<div class="baron__track">
 					            <div class="baron__bar"></div>
 					        </div>
+						</div>
+					</div>
+					<div class="accordeon accordeon-block">
+						<div class="accordeon-button open"></div>
+						<div class="audio-icon"></div>
+						<div class="audio-text">
+							<h6>FOLGE 1</h6>
+							<h3>Title of the first podcast</h3>
+							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+							tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+							At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
+							gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+						</div>
+					</div>
+					<div class="accordeon accordeon-block">
+						<div class="accordeon-button open"></div>
+						<div class="audio-icon"></div>
+						<div class="audio-text">
+							<h6>FOLGE 1</h6>
+							<h3>Title of the first podcast</h3>
+							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+							tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+							At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
+							gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 						</div>
 					</div>
 				</div>
